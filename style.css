@@ -183,6 +183,7 @@ body {
     overflow-x: auto;
     max-width: 414px;
     position: fixed;
+    margin: 0 auto;
     background: #FFFFFF;
 }
 
