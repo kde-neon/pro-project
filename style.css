@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+/* @ Import font */
+@font-face {
+    font-family: Poppins;
+    src: url("./font/Poppins-Bold.ttf");
+}
+
+body {
+    font-family: Poppins;
+    background: #E5E5E5;
+}
+
+/* FLex box class */
+.flex {
+    display: flex;
+    display: -o-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+}
+
+/* btn --> button class */
+.btn {
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    cursor: pointer;
+    max-width: 340px;
+    border-radius: 5px;
+    font-family: Poppins;
+    background: #4F71F3;
+}
+
+/* Tranform class */
+.tf-x50 {
+    transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+/* Left and visibility hidden */
+.leftVh {
+    opacity: .3;
+    display: none;
+    margin-left: -500px !important;
+}
+
+/* Top bar with icons */
+.bar {
+    width: 100%;
+    height: 75px;
+    margin-top: 20px;
+    margin-left: 61px;
+}
+
+/* Bottom solid line */
+.line {
+    width: 100%;
+    height: 1px;
+    background: #EEF0F2;
+}
+
+/* Select font */
+.select {
+    width: 355px;
+    height: 55px;
+    padding: 0 20px;
+    border-radius: 5px;
+    font-family: Poppins;
+    background: #F2F4F5;
+    border-right: solid 15px #F2F4F5;
+}
+
+/* Small selector */
+.select-S {
+    width: 160px;
+    height: 55px;
+    padding: 0 20px;
+    border-radius: 5px;
+    background: #F2F4F5;
+    border-right: solid 15px #F2F4F5;
+}
+
+/* Text margin top bottom */
+.text {
+    height: 18px;
+    margin: 5px 0;
+    display: block;
+    margin-top: 25px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #16213E;
+    font-family: 'Poppins';
+
+}
+
+/* Input class */
+.inp {
+    width: 340px;
+    height: 55px;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-family: Poppins;
+    background: #F2F4F5;
+}
+
+/* Color picker */
+.picker {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.picker input {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.2);
+}
+
+/* C-rotate is a class for rotate arrow on navigator
+    it add and remove class when click on nave bar */
+
+.C-rotate {
+    transition: all .2s ease-in;
+}
+
+.C-rotate.active {
+    transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+
+/* 
+    Top calass are for deffrient deffrient elements
+    thos are created for short code
+*/
+
+/* Canvas continer */
+#canvas {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+}
+
+/* Image and flex controll */
+.img {
+    align-items: center;
+    justify-content: center;
+}
+
+/* Crop image */
+
+#canvas .crop {
+    width: 300px;
+    overflow: hidden;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Poster editor container */
+.poster-editor {
+    right: 0%;
+    bottom: 0;
+    width: 100%;
+    min-height: 427px;
+    overflow-x: auto;
+    max-width: 414px;
+    position: fixed;
+    background: #FFFFFF;
+}
+
+/* Tools lists */
+.tools-list {
+    float: left;
+    overflow-y: hidden;
+    list-style: none;
+}
+
+.tools-list li {
+    float: left;
+}
+
+.large {
+    width: 100%;
+    flex-direction: column;
+}
+
+/* Laptop and pc vershion */
+@media only screen and (min-width: 768px) {
+    .poster-editor {
+        top: 0px;
+        right: 0%;
+        height: 100%;
+        position: fixed;
+        transform: translateX(0);
+        -o-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -webkit-transform: translateX(0);
+    }
+
+    .poster-editor {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .poster-editor::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Canvas size */
+    #canvas {
+        width: 100%;
+        height: 100%;
+    }
+
+    .large {
+        display: inline-block !important;
+    }
+}
+
+
+/* Poster Editor Title Bar */
+.poster-editor-titlebar {
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 90px;
+    color: #fff;
+    align-items: center;
+    background: #232E49;
+}
+
+.poster-editor-titlebar .area {
+    margin-left: 37px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+
+.poster-editor-titlebar .area small {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+/* Post edit tool box */
+.tool-box {
+    width: 100%;
+    height: 325px;
+    max-width: 414px;
+    padding-top: 25px;
+    background: #fff;
+}
+
+/* Post edit tool box tools contianer */
+.tools {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tools .tool {
+    height: 65px;
+    margin-left: 35px;
+    align-items: center;
+    position: relative;
+}
+
+.tools .tool .right {
+    right: 40px;
+    position: absolute;
+}
+
+.tools .tool span {
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.tools .tool .icon {
+    width: 21px;
+    height: 21px;
+    align-items: center;
+    justify-content: center;
+}
+
+.tools .tool span {
+    margin-left: 15px;
+}
+
+
+/* buttom bottom save and continue */
+.button {
+    width: 100%;
+    height: 118px;
+    margin-bottom: 27px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.text-box {
+    width: 100%;
+    height: 100%;
+}
+
+/* poster-text-box contianer */
+.edit-box {
+    width: 100%;
+    padding: 0;
+    height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    text-align: left;
+    align-items: center;
+    display: table-caption;
+    transition: all .2s ease-in;
+}
+
+.edit-box.active {
+    opacity: 1;
+    overflow-y: auto;
+    padding: 5vh 0 !important;
+    height: fit-content !important;
+}
+
+/* Font size & Text Position continaer */
+.font-edit {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Select small box */
+.select-small-box {
+    width: 50%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Small box continer small text left side */
+.select-small-box .left {
+    width: 100%;
+    margin-left: 30px;
+    display: inline-block;
+    text-align: left !important;
+}
+
+/* Color picker hex */
+.colorHexBox {
+    width: 100%;
+    min-width: 300px;
+    justify-content: left;
+    align-items: center;
+    margin-top: 29px !important;
+}
+
+.colorHexBox input {
+    width: 180px;
+    margin-left: 5px;
+}
+
+.colorHexBox span {
+    width: 87px;
+    height: 18px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #16213E;
+}
+
+/* Layer */
+.layer {
+    width: 100%;
+    height: 72px;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    display: table-caption;
+}
+
+.layer:hover {
+    background: #E5E5E5;
+}
+
+/* Layer image */
+.layer .img {
+    width: 50px;
+    height: 60px;
+    border-radius: 5px;
+    align-items: center;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    justify-content: center;
+    border: 1px solid #232E49;
+}
