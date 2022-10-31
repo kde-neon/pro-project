@@ -26,7 +26,7 @@ body {
 
 /* btn --> button class */
 .btn {
-    width: 100%;
+    width: 90%;
     height: 60px;
     color: #fff;
     cursor: pointer;
@@ -267,6 +267,8 @@ body {
     max-width: 414px;
     padding-top: 25px;
     background: #fff;
+    overflow: hidden;
+    overflow-y: auto;
 }
 
 /* Post edit tool box tools contianer */
@@ -502,7 +504,6 @@ body {
     width: 100%;
     height: 50px;
     margin: 0 auto;
-    min-width: 310px;
     position: relative;
     align-items: center;
     justify-content: space-evenly;
