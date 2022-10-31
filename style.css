@@ -79,7 +79,7 @@ body {
 
 /* Small selector */
 .select-S {
-    width: 160px;
+    width: 140px;
     height: 55px;
     padding: 0 20px;
     border-radius: 5px;
@@ -164,7 +164,9 @@ body {
 /* Crop image */
 
 #canvas .crop {
-    width: 300px;
+    width: 99%;
+    min-width: 300px;
+    max-width: 700px;
     overflow: hidden;
     border-radius: 5px;
     align-items: center;
@@ -224,7 +226,7 @@ body {
 
     /* Canvas size */
     #canvas {
-        width: 100%;
+        width: 60%;
         height: 100%;
     }
 
@@ -442,7 +444,7 @@ body {
 
 /* Layerbox middle and right tex and box continer */
 .layer .middle {
-    right: 80px;
+    right: 30%;
     position: absolute;
     font-family: 'Poppins';
     font-style: normal;
@@ -454,7 +456,7 @@ body {
 
 .layer .right {
     position: absolute;
-    right: 3%;
+    right: 20%;
 }
 
 .layer .left-tx {
