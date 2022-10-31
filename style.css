@@ -262,13 +262,11 @@ body {
 
 /* Post edit tool box */
 .tool-box {
-    width: 100%;
+    width: 99%;
     height: 325px;
     max-width: 414px;
     padding-top: 25px;
     background: #fff;
-    overflow: hidden;
-    overflow-y: auto;
 }
 
 /* Post edit tool box tools contianer */
@@ -325,14 +323,15 @@ body {
 
 /* poster-text-box contianer */
 .edit-box {
-    width: 100%;
+    left: 0;
+    width: 95%;
     padding: 0;
     height: 0px;
     opacity: 0;
     overflow: hidden;
     text-align: left;
     align-items: center;
-    display: table-caption;
+    display: flow-root;
     transition: all .2s ease-in;
 }
 
@@ -376,7 +375,7 @@ body {
 }
 
 .colorHexBox input {
-    width: 180px;
+    width: 150px;
     margin-left: 5px;
 }
 
@@ -406,16 +405,15 @@ body {
     position: relative;
     align-items: center;
     justify-content: left;
-    display: table-caption;
+    display: flow-root;
 }
 
-
+/* Layer box layer */
 .layer-box .layer {
     width: 100%;
     align-items: center;
     justify-content: left;
 }
-
 
 /* Layer image */
 .layer .img {
@@ -463,6 +461,13 @@ body {
     margin-left: 20px;
 }
 
+
+/* Artwork thumb contianer */
+.addImg {
+    margin: 0 !important;
+    margin-left: 0 !important;
+}
+
 .artwork-thumb {
     width: 100%;
     height: 260px;
@@ -471,9 +476,6 @@ body {
     margin-top: 25px;
 }
 
-.artwork-thumb span {
-    margin-left: 15px;
-}
 
 .artwork-thumb .itemimg {
     overflow-x: scroll;
