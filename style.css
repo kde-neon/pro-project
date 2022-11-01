@@ -225,6 +225,7 @@ body {
         max-width: 300px;
     }
 }
+
 /* Laptop and pc vershion */
 @media only screen and (min-width: 1024px) {
     .poster-editor {
@@ -572,4 +573,3 @@ body {
     opacity: 0;
     position: absolute;
 }
-
